@@ -19,7 +19,7 @@
       "dest": "index.js"
     },
       {
-      "src": "/products/products-details/:id",
+      "src": "/products/(.*)",
     "dest": "build/index.html" 
     },
     {
