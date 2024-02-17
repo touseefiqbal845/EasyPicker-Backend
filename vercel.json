@@ -82,6 +82,10 @@
       "src": "/login",
       "dest": "build/index.html" 
     },
+        {
+      "src": "/products",
+      "dest": "build/index.html" 
+    },
     {
       "src": "/(.+)",
       "dest": "build/$1"
