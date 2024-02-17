@@ -83,7 +83,7 @@
       "dest": "build/index.html" 
     },
        {
-     "src": "/products/(.*)",
+     "src": "/products",
   "dest": "build/index.html" 
     },
      
