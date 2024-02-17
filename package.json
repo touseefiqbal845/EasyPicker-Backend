@@ -25,5 +25,8 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "stripe": "^12.4.0"
-  }
+  },
+  "engines": {
+    "node": "14.x"
+  },
 }
