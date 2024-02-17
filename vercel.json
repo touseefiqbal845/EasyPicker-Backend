@@ -12,10 +12,6 @@
   ],
   "routes": [
 
-      {
-      "src": "/products",
-      "dest": "build/index.html" 
-    },
  
     {
       "src": "/categories",
