@@ -85,7 +85,7 @@ server.use(
   })
 );
 server.use(passport.authenticate("session"));
-server.use("/products", isAuth(), productsRouters.router);
+server.use("/product", isAuth(), productsRouters.router);
 server.use("/brands", isAuth(), brandsRouter.router);
 server.use("/categories", isAuth(), categoriesRouter.router);
 server.use("/auth", authRouter.router);
