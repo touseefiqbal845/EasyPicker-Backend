@@ -9,6 +9,6 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "build/index.html"}]
+  "rewrites": [{ "source": "/(.*)", "destination": "/"}]
 }
 
