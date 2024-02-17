@@ -71,9 +71,6 @@ opts.secretOrKey = process.env.JWT_SECRET_KEY;
 server.use(cors());
 server.use(cookieParser());
 server.use(express.static("build"));
-server.get("*", (req, res) =>
-  res.sendFile(path.resolve("build", "index.html"))
-);
 server.use(express.json());
 server.use(
   cors({
@@ -95,6 +92,9 @@ server.use("/auth", authRouter.router);
 server.use("/users", isAuth(), usersRouter.router);
 server.use("/cart", isAuth(), cartRouter.router);
 server.use("/orders", isAuth(), orderRouter.router);
+server.get("*", (req, res) =>
+  res.sendFile(path.resolve("build", "index.html"))
+);
 server.get("/", (req, res) => {
   res.json({ status: "success" });
 });
@@ -195,7 +195,7 @@ server.post("/create-payment-intent", async (req, res) => {
 // MongoDb Connection and server ports
 
 server.listen(process.env.PORT, () => {
-  console.log(`The Server is started at ${process.env.PORT} Port`);
+  console.log(`Server is started at ${process.env.PORT} Port`);
 });
 
 const main = async () => {
