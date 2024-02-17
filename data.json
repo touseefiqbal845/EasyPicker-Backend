@@ -1731,23 +1731,7 @@
         "https://i.dummyjson.com/data/products/84/thumbnail.jpg"
       ]
     },
-    {
-      "id": 85,
-      "title": "LouisWill Men Sunglasses",
-      "description": "LouisWill Men Sunglasses Polarized Sunglasses UV400 Sunglasses Day Night Dual Use Safety Driving Night Vision Eyewear AL-MG Frame Sun Glasses with Free Box for Drivers",
-      "price": 50,
-      "discountPercentage": 11.27,
-      "rating": 4.98,
-      "stock": 92,
-      "brand": "LouisWill",
-      "category": "sunglasses",
-      "thumbnail": "https://i.dummyjson.com/data/products/85/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/85/1.jpg",
-        "https://i.dummyjson.com/data/products/85/2.jpg",
-        "https://i.dummyjson.com/data/products/85/thumbnail.jpg"
-      ]
-    },
+   
     {
       "id": 86,
       "title": "Bluetooth Aux",
