@@ -11,11 +11,11 @@
   ],
   "routes": [
     {
-      "src": "/products",
+      "src": "/product",
       "dest": "index.js"
     },
     {
-      "src": "/products/(.*)",
+      "src": "/product/(.*)",
       "dest": "index.js"
     },
     {
@@ -80,6 +80,10 @@
     },
     {
       "src": "/login",
+      "dest": "build/index.html" 
+    },
+       {
+      "src": "/products",
       "dest": "build/index.html" 
     },
     {
