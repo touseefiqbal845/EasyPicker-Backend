@@ -1,15 +1,16 @@
 {
   "builds": [
-  
-  
     {
       "src": "build/**",
       "use": "@vercel/static"
+    },
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-  
-{
+    {
       "src": "/products",
       "dest": "index.js"
     },
@@ -17,7 +18,6 @@
       "src": "/products/(.*)",
       "dest": "index.js"
     },
- 
     {
       "src": "/categories",
       "dest": "index.js"
@@ -78,22 +78,15 @@
       "src": "/",
       "dest": "build/index.html"
     },
-       {
+    {
       "src": "/login",
       "dest": "build/index.html" 
     },
-   
     {
       "src": "/(.+)",
       "dest": "build/$1"
     }
-  ],
-  
-       {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  
-
+  ]
 }
+
 
