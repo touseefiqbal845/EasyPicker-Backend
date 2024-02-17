@@ -86,12 +86,13 @@
     {
       "src": "/(.+)",
       "dest": "build/$1"
-    },
+    }
+  ],
+  
        {
       "src": "index.js",
       "use": "@vercel/node"
     }
-  ]
   
 
 }
