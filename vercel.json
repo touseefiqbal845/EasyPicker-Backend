@@ -83,7 +83,7 @@
       "dest": "build/index.html" 
     },
     {
-      "src": "/(.*)",
+      "src": "/(.+)",
       "dest": "build/$1"
     }
   ]
