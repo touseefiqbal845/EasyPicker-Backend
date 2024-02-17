@@ -84,8 +84,9 @@
     },
        {
      "src": "/products",
-  "dest": "build/index.html" 
+     "dest": "build/index.html" 
     },
+    
      
     {
       "src": "/(.+)",
