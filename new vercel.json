@@ -82,7 +82,7 @@
       "src": "/(.+)",
       "dest": "build/$1"
     }
-     { "source": "/(.*)", "destination": "/" }
+   
 
   ]
 }
