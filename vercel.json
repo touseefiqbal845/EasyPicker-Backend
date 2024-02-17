@@ -10,14 +10,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/products",
-      "dest": "index.js"
-    },
-    {
-      "src": "/products/(.*)",
-      "dest": "index.js"
-    },
+   
     {
       "src": "/categories",
       "dest": "index.js"
