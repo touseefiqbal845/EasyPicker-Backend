@@ -83,7 +83,18 @@
         "src": "/login",
         "dest": "build/index.html"
       },
-        
+          {
+    "src": "/logout",
+    "dest": "build/index.html"
+  },
+      {
+    "src": "/signup",
+    "dest": "build/index.html"
+  },
+      {
+    "src": "/products",
+    "dest": "build/index.html"
+  },
       
       {
         "src": "/(.+)",
