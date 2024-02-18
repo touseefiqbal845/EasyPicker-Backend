@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   },
 });
  
-exports.isAuth = (req, res, done) => {
+exports.isAuth = (req, res, done) => {   
   return passport.authenticate("jwt");
 };
  

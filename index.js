@@ -85,12 +85,12 @@ server.use(
   })
 );
 server.use(passport.authenticate("session"));
-server.use("/products", isAuth(), productsRouters.router);
+server.use("/all-products", isAuth(), productsRouters.router);
 server.use("/brands", isAuth(), brandsRouter.router);
 server.use("/categories", isAuth(), categoriesRouter.router);
 server.use("/auth", authRouter.router);
 server.use("/users", isAuth(), usersRouter.router);
-server.use("/cart", isAuth(), cartRouter.router);
+server.use("/carts", isAuth(), cartRouter.router);
 server.use("/orders", isAuth(), orderRouter.router);
 server.get("*", (req, res) =>
   res.sendFile(path.resolve("build", "index.html"))
@@ -195,7 +195,7 @@ server.post("/create-payment-intent", async (req, res) => {
 // MongoDb Connection and server ports
 
 server.listen(process.env.PORT, () => {
-  console.log(`Server is started at ${process.env.PORT} Port`);
+  console.log(`server is started at ${process.env.PORT} port`);
 });
 
 const main = async () => {
