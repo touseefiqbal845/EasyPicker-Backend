@@ -19,6 +19,10 @@
         "src": "/products/(.*)",
         "dest": "index.js"
       },
+        {
+        "src": "/products/:id",
+        "dest": "index.js"
+      },
       {
         "src": "/categories",
         "dest": "index.js"
