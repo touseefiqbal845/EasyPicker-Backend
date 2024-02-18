@@ -124,7 +124,7 @@
     "dest": "build/index.html"
   },
           {
-    "src": "/admin/product-detail/:id",
+    "src": "/admin/product-detail/(.*)",
     "dest": "build/index.html"
   },
        {
