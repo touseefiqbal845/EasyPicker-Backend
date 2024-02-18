@@ -78,9 +78,102 @@
         "src": "/",
         "dest": "build/index.html"
       },
+          {
+        "src": "/login",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/logout",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/signup",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/products",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/contact-us",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/about-us",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/cart",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/checkout",
+        "dest": "build/index.html"
+      },
+          {
+        "src": "/admin",
+        "dest": "build/index.html"
+      },
+             {
+        "src": "/product-detail/:id",
+        "dest": "build/index.html"
+      },
+              {
+        "src": "/admin/product-detail/:id",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/admin/orders-charts",
+        "dest": "build/index.html"
+      },
+     
+           {
+        "src": "/admin/product-form",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/admin/orders",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/admin/product-form/edit/:id",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/order-success/:id",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/profile",
+        "dest": "build/index.html"
+      },
+            {
+        "src": "/my-orders",
+        "dest": "build/index.html"
+      },
+
+           {
+        "src": "/stripe-checkout",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/forgot-password",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "/reset-password",
+        "dest": "build/index.html"
+      },
+           {
+        "src": "*",
+        "dest": "build/index.html"
+      },
+      
       {
         "src": "/(.+)",
         "dest": "build/$1"
       }
     ]
   }
+
+
