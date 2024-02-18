@@ -17,7 +17,6 @@ exports.createOrder = async (req, res) => {
     const doc = await order.save();
     const userEmail = await User.findById(order.user);
     console.log("userEmail", userEmail);
-    // we can use await for this also
     sendMail({
       to: userEmail.email,
       html: invoiceTemplate(order),

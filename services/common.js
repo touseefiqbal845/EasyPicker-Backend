@@ -6,7 +6,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "touseefrana552@gmail.com",
-    pass: process.env.MAIL_PASSWARD,
+    pass: 'whdm wpxa jrar zzvl',
   },
 });
  
@@ -14,16 +14,18 @@ exports.isAuth = (req, res, done) => {
   return passport.authenticate("jwt");
 };
  
-exports.cookieExtractor = function (req) {
+exports.cookieExtractor = function (req) {  
   let token = null;
   if (req && req.cookies) { 
-    token = req.cookies["jwt"];  
-  }  
-   return token;
+    token = req.cookies["jwt"];   
+  }   
+  // token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDExYmY5ZTdhMmMxN2M5ZjhjMGUxNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA4Mjc4NTIxfQ.vEixuQ7BhcGAnMXJj3ouWtri-GULT8PABCsWTExCKfU";
+   return token;  
 };  
 
 exports.sanitizeUser = (user) => {
   return { id: user.id, role: user.role };
+
 };
 
 exports.sendMail = async function ({ to, subject, text, html }) {
