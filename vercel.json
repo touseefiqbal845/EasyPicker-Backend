@@ -120,7 +120,7 @@
     "dest": "build/index.html"
   },
           {
-    "src": "/product-detail/:id",
+    "src": "/product-detail/(.*)",
     "dest": "build/index.html"
   },
           {
@@ -141,7 +141,7 @@
     "dest": "build/index.html"
   },
        {
-    "src": "/admin/product-form/edit/:id",
+    "src": "/admin/product-form/edit/(.*)",
     "dest": "build/index.html"
   },
        {
