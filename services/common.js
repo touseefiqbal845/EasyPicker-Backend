@@ -1,11 +1,12 @@
 const passport = require("passport");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "touseefrana552@gmail.com",
-    pass: "whdm wpxa jrar zzvl",
+    pass: process.env.MAIL_PASSWARD,
   },
 });
  
@@ -18,10 +19,7 @@ exports.cookieExtractor = function (req) {
   if (req && req.cookies) { 
     token = req.cookies["jwt"];  
   }  
-  // token =
-    // "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDA5YmIwMmQ4OGY1OWViZjVkYTllOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwODE3MTIyNn0.BdjtZvAqkemBOKQytDvZIhCMaWoWHcRCCyqI-tT90Fk";
-  // // // token ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2NjYmU1YjQ3ZGFlMTA3NTkwZjU1OSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcwNzkzMzk2MX0.mfyJONxcXnymdbwrfJTmQdxkKS7eW_RRLMtrvmZoh6k';
-  return token;
+   return token;
 };  
 
 exports.sanitizeUser = (user) => {

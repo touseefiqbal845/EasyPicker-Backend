@@ -4,9 +4,6 @@ const mongoose = require("mongoose");
 
 exports.createProduct = async (req, res) => {
   const product = new Product(req.body);
-  // const productId = mongoose.Types.ObjectId(product.id);
-
-  // console.log({productId});
   product.discountPrice = Math.round(
     product.price * (1 - product.discountPercentage / 100)
   );

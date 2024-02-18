@@ -197,7 +197,7 @@ server.post("/create-payment-intent", async (req, res) => {
 // MongoDb Connection and server ports
 
 server.listen(process.env.PORT, () => {
-  console.log(`server is started at ${process.env.PORT} port`);
+  console.log(`the server is started at ${process.env.PORT} port`);
 });
 
 const main = async () => {
