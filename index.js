@@ -70,10 +70,8 @@ opts.secretOrKey = process.env.JWT_SECRET_KEY;
 // Express Server Middleware
 server.use(cors());
 server.use(cookieParser());
-server.use(express.static("build"));
-server.get("*", (req, res) =>
-  res.sendFile(path.resolve("build", "index.html"))
-);
+server.use(express.static(path.resolve(__dirname, 'build')));
+
 server.use(express.json());
 server.use(
   cors({
@@ -95,7 +93,9 @@ server.use("/auth", authRouter.router);
 server.use("/users", isAuth(), usersRouter.router);
 server.use("/cart", isAuth(), cartRouter.router);
 server.use("/orders", isAuth(), orderRouter.router);
-
+server.get("*", (req, res) =>
+  res.sendFile(path.resolve("build", "index.html"))
+);
 server.get("/", (req, res) => {
   res.json({ status: "success" });
 });
