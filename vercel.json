@@ -147,7 +147,31 @@
        {
     "src": "/profile",
     "dest": "build/index.html"
-  }
+  },
+        {
+    "src": "/my-orders",
+    "dest": "build/index.html"
+  },
+
+       {
+    "src": "/stripe-checkout",
+    "dest": "build/index.html"
+  },
+       {
+    "src": "/forgot-password",
+    "dest": "build/index.html"
+  },
+       {
+    "src": "/reset-password",
+    "dest": "build/index.html"
+  },{
+  "src": "/(.+)",
+  "dest": "build/$1"
+},
+{
+  "src": "*",
+  "dest": "build/index.html"
+}
 
     ]
   }
