@@ -95,6 +95,26 @@
     "src": "/products",
     "dest": "build/index.html"
   },
+          {
+    "src": "/contact-us",
+    "dest": "build/index.html"
+  },
+      {
+    "src": "/about-us",
+    "dest": "build/index.html"
+  },
+      {
+    "src": "/cart",
+    "dest": "build/index.html"
+  },
+      {
+    "src": "/checkout",
+    "dest": "build/index.html"
+  },
+      {
+    "src": "/admin",
+    "dest": "build/index.html"
+  },
       
       {
         "src": "/(.+)",
