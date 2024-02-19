@@ -144,7 +144,7 @@
   "dest": "build/index.html"
 },
      {
-  "src": "/order-success/:id",
+  "src": "/order-success/(.*)",
   "dest": "build/index.html"
 },
      {
