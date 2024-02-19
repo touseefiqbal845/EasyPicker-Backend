@@ -11,14 +11,16 @@
       "brand": "Apple",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+    
       "images": [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
+        "https://i.dummyjson.com/data/products/1        .jpg",
         "https://i.dummyjson.com/data/products/1/2.jpg",
         "https://i.dummyjson.com/data/products/1/3.jpg",
         "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
       ],
       "deleted": true
-    },
+    }
+    ,
     {
       "id": 2,
       "title": "iPhone X",
@@ -1688,6 +1690,11 @@
       "brand": "Samsung",
       "category": "laptops",
       "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "colors": [
+        { "name": "White", "class": "bg-white", "selectedClass": "ring-gray-400" },
+        { "name": "Gray", "class": "bg-gray-200", "selectedClass": "ring-gray-400" },
+        { "name": "Black", "class": "bg-gray-900", "selectedClass": "ring-gray-900" }
+      ],
       "images": [
         "https://i.dummyjson.com/data/products/7/1.jpg",
         "https://i.dummyjson.com/data/products/7/2.jpg",
@@ -2428,6 +2435,8 @@
           "brand": "Apple",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/2/1.jpg",
             "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -2491,6 +2500,8 @@
           "brand": "Apple",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/2/1.jpg",
             "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -2555,6 +2566,8 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/3/1.jpg"
           ],
@@ -2572,6 +2585,8 @@
           "brand": "Huawei",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/5/1.jpg",
             "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -2624,6 +2639,8 @@
           "brand": "Apple",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/1/1.jpg",
             "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -2688,6 +2705,8 @@
           "brand": "Apple",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/2/1.jpg",
             "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -2751,6 +2770,8 @@
           "brand": "Apple",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/2/1.jpg",
             "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -2815,6 +2836,8 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/3/1.jpg"
           ],
@@ -2832,6 +2855,8 @@
           "brand": "Huawei",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/5/1.jpg",
             "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -2886,6 +2911,8 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/3/1.jpg"
           ],
@@ -2903,6 +2930,8 @@
           "brand": "Huawei",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/5/1.jpg",
             "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -2957,6 +2986,8 @@
           "brand": "Apple",
           "category": "laptops",
           "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/6/1.png",
             "https://i.dummyjson.com/data/products/6/2.jpg",
@@ -3012,6 +3043,8 @@
           "brand": "Microsoft Surface",
           "category": "laptops",
           "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/8/1.jpg",
             "https://i.dummyjson.com/data/products/8/2.jpg",
@@ -3068,6 +3101,8 @@
           "brand": "Microsoft Surface",
           "category": "laptops",
           "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+  
+  
           "images": [
             "https://i.dummyjson.com/data/products/8/1.jpg",
             "https://i.dummyjson.com/data/products/8/2.jpg",

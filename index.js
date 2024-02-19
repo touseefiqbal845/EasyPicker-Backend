@@ -40,9 +40,9 @@ server.post(
     try {
       event = stripe.webhooks.constructEvent(request.body, sig, endpointSecret);
     } catch (err) {
-      response.status(400).send(`Webhook Error: ${err.message}`);
+      response.status(400).send(`Webhook Error: ${err.message}`);    
       return;
-    }
+    }  
 
     // Handle the event
     switch (event.type) {
@@ -73,8 +73,6 @@ opts.secretOrKey = process.env.JWT_SECRET_KEY;
 // Express Server Middleware
 server.use(cors());
 server.use(cookieParser());
-
-
 server.use(express.json());
 server.use(
   cors({
@@ -172,7 +170,7 @@ passport.deserializeUser(function (user, cb) {
 
 // Stripe
 
-const stripe = require("stripe")(process.env.STRIPE_SERVER_KEY);
+const stripe = require("stripe")("sk_test_51OjwphCNpBFDWD7HRpZfCdp7wQeet6FSZzSO3lU2hBiZbz7hDNiX7QhnYEjeeBoutP1vULhFhw0KTo7o0Pglua8V00jRHwhdAo");
 
 server.post("/create-payment-intent", async (req, res) => {
   const { totalAmount, orderId } = req.body;
@@ -214,3 +212,5 @@ main();
 server.get("/", (req, res) => {
   res.json({ status: "success" });
 });
+
+ 

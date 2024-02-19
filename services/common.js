@@ -19,9 +19,8 @@ exports.cookieExtractor = function (req) {
   if (req && req.cookies) { 
     token = req.cookies["jwt"];   
   }   
-  // token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDExYmY5ZTdhMmMxN2M5ZjhjMGUxNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzA4Mjc4NTIxfQ.vEixuQ7BhcGAnMXJj3ouWtri-GULT8PABCsWTExCKfU";
    return token;  
-};  
+};     
 
 exports.sanitizeUser = (user) => {
   return { id: user.id, role: user.role };
@@ -167,7 +166,7 @@ img {
         <tr>
           <td align="center" valign="top" style="padding: 36px 24px;">
             <a href="https://sendgrid.com" target="_blank" style="display: inline-block;">
-              <img src="./img/paste-logo-light@2x.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
+              <img src="/build/logo-black.png" alt="Logo" border="0" width="48" style="display: block; width: 48px; max-width: 48px; min-width: 48px;">
             </a>
           </td>
         </tr>
