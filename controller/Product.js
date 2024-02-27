@@ -4,9 +4,9 @@ const mongoose = require("mongoose");
 
 exports.createProduct = async (req, res) => {
   const product = new Product(req.body);
-  product.discountPrice = Math.round(
-    product.price * (1 - product.discountPercentage / 100)
-  );
+  // product.discountPrice = Math.round(
+  //   product.price * (1 - product.discountPercentage / 100)
+  // );
   try {
     const doc = await product.save();
     res.status(201).json(doc);
@@ -85,9 +85,9 @@ exports.updateProduct = async (req, res) => {
     const product = await Product.findByIdAndUpdate(id, req.body, {
       new: true,
     });
-    product.discountPrice = Math.round(
-      product.price * (1 - product.discountPercentage / 100)
-    );
+    // product.discountPrice = Math.round(
+    //   product.price * (1 - product.discountPercentage / 100)
+    // );
     res.status(200).json(product);
   } catch (err) {
     res.status(400).json(err);
